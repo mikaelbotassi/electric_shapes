@@ -1,8 +1,9 @@
 name: electric_shapes
-description: Custom electric network icon font and widgets for Flutter 
-  applications.
+description: Flutter package with electric network icons and technical symbols for diagrams and utility apps.
 version: 1.0.0
-homepage:
+homepage: https://github.com/mikaelbotassi/electric_shapes
+repository: https://github.com/mikaelbotassi/electric_shapes
+issue_tracker: https://github.com/mikaelbotassi/electric_shapes/issues
 
 environment:
   sdk: ^3.5.0
@@ -17,6 +18,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+
+topics:
+  - flutter
+  - icons
+  - svg
+  - diagrams
+  - electrical
+
+screenshots:
+  - description: Electric symbols rendered with Flutter widgets.
+    path: screenshots/catalog.jpg
 
 flutter:
   fonts:
