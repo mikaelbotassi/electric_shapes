@@ -1,5 +1,6 @@
-name: electric_icons
-description: Custom electric network icon font for Flutter applications.
+name: electric_shapes
+description: Custom electric network icon font and widgets for Flutter 
+  applications.
 version: 1.0.0
 homepage:
 
@@ -10,11 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.2.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   fonts:

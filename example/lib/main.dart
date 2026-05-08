@@ -1,0 +1,7 @@
+import 'package:electric_shapes/electric_shapes.dart';
+import 'package:example/src/app_widget.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const ElectricShapesExampleApp());
+}
