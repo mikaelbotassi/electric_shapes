@@ -1,3 +1,10 @@
+## 1.0.2
+
+Refactor: Clean up `shapes.dart` export file
+
+- Remove redundant documentation comments from `lib/src/shapes/shapes.dart`.
+- Clean up whitespace and formatting in export statements.
+
 ## 1.0.1
 
 Docs: Add comprehensive DartDoc documentation for symbols and widgets
