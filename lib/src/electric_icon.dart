@@ -1,4 +1,3 @@
-import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/widgets.dart';
 
 class ElectricIcon extends StatelessWidget {

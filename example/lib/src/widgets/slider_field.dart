@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class SliderField extends StatelessWidget{
   const SliderField({
+    super.key,
     required this.label,
     required this.value,
     required this.min,
