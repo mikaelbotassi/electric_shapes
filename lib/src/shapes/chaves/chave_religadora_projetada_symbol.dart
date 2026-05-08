@@ -1,7 +1,11 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave religadora projetada.
+///
+/// A versão projetada envolve o corpo da chave em um círculo externo.
 class ChaveReligadoraProjetadaSymbol extends ElectricShape {
+  /// Cria um símbolo de chave religadora projetada.
   const ChaveReligadoraProjetadaSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +25,7 @@ class ChaveReligadoraProjetadaSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveReligadoraProjetadaSymbol(
       color: color ?? this.color,

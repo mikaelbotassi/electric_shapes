@@ -1,7 +1,12 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de aterramento existente.
+///
+/// Renderiza o desenho convencional com três barras verticais e extensão
+/// horizontal para ligação na rede.
 class AterramentoExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de aterramento existente.
   const AterramentoExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class AterramentoExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return AterramentoExistenteSymbol(
       color: color ?? this.color,

@@ -1,7 +1,12 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave fusível existente.
+///
+/// O desenho preserva a geometria aberta com curva do elo fusível e conexão
+/// inferior.
 class ChaveFusivelExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de chave fusível existente.
   const ChaveFusivelExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class ChaveFusivelExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveFusivelExistenteSymbol(
       color: color ?? this.color,

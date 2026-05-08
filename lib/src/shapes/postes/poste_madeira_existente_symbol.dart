@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de poste de madeira existente.
+///
+/// É representado por um círculo simples com contorno.
 class PosteMadeiraExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de poste de madeira existente.
   const PosteMadeiraExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +25,7 @@ class PosteMadeiraExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return PosteMadeiraExistenteSymbol(
       color: color ?? this.color,

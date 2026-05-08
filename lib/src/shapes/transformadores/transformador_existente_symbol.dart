@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de transformador existente.
+///
+/// É desenhado como um triângulo com contorno.
 class TransformadorExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de transformador existente.
   const TransformadorExistenteSymbol({
     super.key,
     super.size = 48,
@@ -21,6 +25,7 @@ class TransformadorExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return TransformadorExistenteSymbol(
       color: color ?? this.color,

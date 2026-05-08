@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de transformador projetado.
+///
+/// A versão projetada envolve o triângulo em um círculo externo.
 class TransformadorProjetadoSymbol extends ElectricShape {
+  /// Cria um símbolo de transformador projetado.
   const TransformadorProjetadoSymbol({
     super.key,
     super.size = 48,
@@ -21,6 +25,7 @@ class TransformadorProjetadoSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return TransformadorProjetadoSymbol(
       color: color ?? this.color,

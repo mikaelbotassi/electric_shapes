@@ -1,7 +1,12 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave fusível projetada.
+///
+/// Adiciona um anel circular ao desenho da chave para indicar elemento
+/// projetado.
 class ChaveFusivelProjetadaSymbol extends ElectricShape {
+  /// Cria um símbolo de chave fusível projetada.
   const ChaveFusivelProjetadaSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class ChaveFusivelProjetadaSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveFusivelProjetadaSymbol(
       color: color ?? this.color,

@@ -2,7 +2,11 @@ import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:electric_shapes/src/shapes/redes/horizontal_line_painter.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de rede de média tensão.
+///
+/// Renderiza uma linha horizontal tracejada.
 class RedeMediaTensaoSymbol extends ElectricShape {
+  /// Cria um símbolo de rede de média tensão.
   const RedeMediaTensaoSymbol({
     super.key,
     super.size = 180,
@@ -23,6 +27,7 @@ class RedeMediaTensaoSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return RedeMediaTensaoSymbol(
       size: size ?? this.size,

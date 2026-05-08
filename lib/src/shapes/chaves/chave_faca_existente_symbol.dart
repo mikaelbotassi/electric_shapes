@@ -1,7 +1,12 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave faca existente.
+///
+/// Exibe o contato articulado aberto sem o contorno circular usado na versão
+/// projetada.
 class ChaveFacaExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de chave faca existente.
   const ChaveFacaExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class ChaveFacaExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveFacaExistenteSymbol(
       color: color ?? this.color,

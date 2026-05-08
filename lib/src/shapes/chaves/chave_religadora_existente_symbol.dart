@@ -1,7 +1,11 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave religadora existente.
+///
+/// Mostra um retângulo com o texto `RL` e saída horizontal para a rede.
 class ChaveReligadoraExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de chave religadora existente.
   const ChaveReligadoraExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +25,7 @@ class ChaveReligadoraExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveReligadoraExistenteSymbol(
       color: color ?? this.color,

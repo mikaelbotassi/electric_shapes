@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de para-raios existente.
+///
+/// Desenha quatro barras verticais alternadas e uma ligação horizontal.
 class ParaRaiosExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de para-raios existente.
   const ParaRaiosExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +25,7 @@ class ParaRaiosExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ParaRaiosExistenteSymbol(
       color: color ?? this.color,

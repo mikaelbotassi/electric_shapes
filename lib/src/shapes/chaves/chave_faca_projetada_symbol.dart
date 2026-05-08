@@ -1,7 +1,12 @@
 import 'package:electric_shapes/electric_shapes.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de chave faca projetada.
+///
+/// Usa um anel circular externo para distinguir o elemento projetado no
+/// diagrama elétrico.
 class ChaveFacaProjetadaSymbol extends ElectricShape {
+  /// Cria um símbolo de chave faca projetada.
   const ChaveFacaProjetadaSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class ChaveFacaProjetadaSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return ChaveFacaProjetadaSymbol(
       color: color ?? this.color,

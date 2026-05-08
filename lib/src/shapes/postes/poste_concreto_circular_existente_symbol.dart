@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de poste de concreto circular existente.
+///
+/// É representado por dois círculos concêntricos apenas com contorno.
 class PosteConcretoCircularExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de poste de concreto circular existente.
   const PosteConcretoCircularExistenteSymbol({
     super.key,
     super.size = 48,
@@ -21,6 +25,7 @@ class PosteConcretoCircularExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return PosteConcretoCircularExistenteSymbol(
       color: color ?? this.color,

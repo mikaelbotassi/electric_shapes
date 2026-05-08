@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de aterramento projetado.
+///
+/// Representa a versão projetada com anel circular externo e linhas internas.
 class AterramentoProjetadoSymbol extends ElectricShape {
+  /// Cria um símbolo de aterramento projetado.
   const AterramentoProjetadoSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +25,7 @@ class AterramentoProjetadoSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return AterramentoProjetadoSymbol(
       color: color ?? this.color,

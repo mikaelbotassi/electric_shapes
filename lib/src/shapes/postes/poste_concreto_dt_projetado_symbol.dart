@@ -1,7 +1,11 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de poste de concreto duplo T projetado.
+///
+/// A versão projetada possui corpo preenchido com recortes laterais internos.
 class PosteConcretoDtProjetadoSymbol extends ElectricShape {
+  /// Cria um símbolo de poste de concreto duplo T projetado.
   const PosteConcretoDtProjetadoSymbol({
     super.key,
     super.size = 48,
@@ -21,6 +25,7 @@ class PosteConcretoDtProjetadoSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return PosteConcretoDtProjetadoSymbol(
       color: color ?? this.color,

@@ -3,7 +3,12 @@ import 'dart:math' as math;
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de poste de fibra de vidro projetado.
+///
+/// A metade direita do círculo externo é preenchida, com meia circunferência
+/// interna à esquerda.
 class PosteFibraVidroProjetadoSymbol extends ElectricShape {
+  /// Cria um símbolo de poste de fibra de vidro projetado.
   const PosteFibraVidroProjetadoSymbol({
     super.key,
     super.size = 180,
@@ -23,6 +28,7 @@ class PosteFibraVidroProjetadoSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return PosteFibraVidroProjetadoSymbol(
       color: color ?? this.color,

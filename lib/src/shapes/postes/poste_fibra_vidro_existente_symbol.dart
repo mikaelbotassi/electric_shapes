@@ -1,7 +1,12 @@
 import 'package:electric_shapes/src/shapes/electric_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Símbolo de poste de fibra de vidro existente.
+///
+/// Mostra um círculo externo com núcleo interno dividido verticalmente e metade
+/// direita preenchida.
 class PosteFibraVidroExistenteSymbol extends ElectricShape {
+  /// Cria um símbolo de poste de fibra de vidro existente.
   const PosteFibraVidroExistenteSymbol({
     super.key,
     super.size = 180,
@@ -21,6 +26,7 @@ class PosteFibraVidroExistenteSymbol extends ElectricShape {
   }
 
   @override
+  /// Retorna uma cópia do símbolo com as propriedades informadas.
   ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
     return PosteFibraVidroExistenteSymbol(
       color: color ?? this.color,

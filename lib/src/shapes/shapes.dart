@@ -1,4 +1,7 @@
-//GENERATED BARREL FILE 
+/// Exporta todos os símbolos elétricos desenhados via `CustomPaint`.
+///
+/// Este arquivo centraliza o acesso às implementações de [ElectricShape]
+/// disponibilizadas pelo pacote.
 export './aterramentos/aterramento_existente_symbol.dart'; 
 export './aterramentos/aterramento_projetado_symbol.dart'; 
 export './chaves/chave_faca_existente_symbol.dart'; 
