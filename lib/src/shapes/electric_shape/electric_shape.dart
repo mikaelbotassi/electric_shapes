@@ -43,7 +43,10 @@ abstract class ElectricShape extends StatelessWidget {
   ElectricShape copyWith({
     double? size,
     Color? color,
-    double? strokeWidth
+    double? strokeWidth,
+    String? text,
+    double? fontSize,
+    LatLong? latLong
   });
 
   /// Constroi apenas a representacao visual principal do simbolo.

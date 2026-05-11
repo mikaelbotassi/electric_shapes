@@ -31,11 +31,21 @@ class AterramentoExistenteSymbol extends ElectricShape {
 
   @override
   /// Retorna uma cópia do símbolo com as propriedades informadas.
-  ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
+  ElectricShape copyWith({
+    double? size,
+    Color? color,
+    double? strokeWidth,
+    String? text,
+    double? fontSize,
+    LatLong? latLong
+  }) {
     return AterramentoExistenteSymbol(
       color: color ?? this.color,
       strokeWidth: strokeWidth ?? this.strokeWidth,
       size: size ?? this.size,
+      latLong: latLong ?? this.latLong,
+      text: text ?? this.text,
+      fontSize: fontSize ?? this.fontSize,
     );
   }
 }

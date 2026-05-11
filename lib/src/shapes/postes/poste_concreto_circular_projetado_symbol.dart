@@ -1,5 +1,6 @@
 import 'dart:ui' as ui;
 import 'package:electric_shapes/src/shapes/electric_shape/electric_shape.dart';
+import 'package:electric_shapes/src/shapes/electric_shape/latlong_desc_widget.dart';
 import 'package:flutter/material.dart';
 
 /// Símbolo de poste de concreto circular projetado.
@@ -30,11 +31,21 @@ class PosteConcretoCircularProjetadoSymbol extends ElectricShape {
 
   @override
   /// Retorna uma cópia do símbolo com as propriedades informadas.
-  ElectricShape copyWith({double? size, Color? color, double? strokeWidth}) {
+  ElectricShape copyWith({
+    double? size,
+    Color? color,
+    double? strokeWidth,
+    String? text,
+    double? fontSize,
+    LatLong? latLong
+  }) {
     return PosteConcretoCircularProjetadoSymbol(
       color: color ?? this.color,
       strokeWidth: strokeWidth ?? this.strokeWidth,
       size: size ?? this.size,
+      latLong: latLong ?? this.latLong,
+      text: text ?? this.text,
+      fontSize: fontSize ?? this.fontSize,
     );
   }
 }
