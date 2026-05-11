@@ -1,3 +1,12 @@
+## 1.0.5
+
+Refactor: Extract `LatLong` class to a dedicated models file
+
+- Move the `LatLong` coordinate model from `latlong_desc_widget.dart` to a new `src/models.dart` file for better architectural separation.
+- Export `src/models.dart` from the main `electric_shapes.dart` library file to make it available to package users.
+- Update imports across all symbol widgets—including transformers, poles, switches, grounding, and networks—to reference the new model location.
+- Standardize imports in various symbol files, ensuring consistent access to `ElectricShape` and `LatLong`.
+
 ## 1.0.4
 
 Refactor: Expand `ElectricShape.copyWith` with metadata properties
