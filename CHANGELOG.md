@@ -1,3 +1,12 @@
+## 1.0.3
+
+Docs: Add documentation for electric shape and coordinate widgets
+
+- Add documentation comments to `ElectricShape` properties, including `strokeWidth`, `text`, and `latLong`.
+- Document the `buildShape` method to clarify its role in rendering the primary shape versus auxiliary elements.
+- Add documentation for the `LatLong` class, its decimal degree fields, and `LatlongDescWidget` parameters.
+- Reformat indentation for the `color` argument inside `Color.alphaBlend` in `electric_shape.dart`.
+
 ## 1.0.2
 
 Refactor: Clean up `shapes.dart` export file
