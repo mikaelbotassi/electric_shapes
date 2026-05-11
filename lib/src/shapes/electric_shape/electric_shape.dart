@@ -1,3 +1,4 @@
+import 'package:electric_shapes/src/models.dart';
 import 'package:electric_shapes/src/shapes/electric_shape/latlong_desc_widget.dart';
 import 'package:flutter/material.dart';
 
