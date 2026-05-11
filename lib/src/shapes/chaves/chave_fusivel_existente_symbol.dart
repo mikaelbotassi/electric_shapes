@@ -12,10 +12,13 @@ class ChaveFusivelExistenteSymbol extends ElectricShape {
     super.size = 180,
     super.color = const Color(0xFF2F3437),
     super.strokeWidth = 1,
+    super.latLong,
+    super.text,
+    super.fontSize = 16
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildShape(BuildContext context) {
     return CustomPaint(
       size: Size(size * (559 / 280), size),
       painter: _ChaveFusivelExistentePainter(

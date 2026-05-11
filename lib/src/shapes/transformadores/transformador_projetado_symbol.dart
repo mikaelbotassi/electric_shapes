@@ -1,4 +1,4 @@
-import 'package:electric_shapes/src/shapes/electric_shape.dart';
+import 'package:electric_shapes/src/shapes/electric_shape/electric_shape.dart';
 import 'package:flutter/material.dart';
 
 /// Símbolo de transformador projetado.
@@ -11,10 +11,13 @@ class TransformadorProjetadoSymbol extends ElectricShape {
     super.size = 48,
     super.color = const Color(0xFF2F3437),
     super.strokeWidth = 1,
+    super.latLong,
+    super.text,
+    super.fontSize = 16
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildShape(BuildContext context) {
     return CustomPaint(
       size: Size.square(size),
       painter: _CircleTrianglePainter(

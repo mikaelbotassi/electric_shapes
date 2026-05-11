@@ -1,4 +1,5 @@
-import 'package:electric_shapes/src/shapes/electric_shape.dart';
+import 'package:electric_shapes/src/shapes/electric_shape/electric_shape.dart';
+import 'package:electric_shapes/src/shapes/electric_shape/latlong_desc_widget.dart';
 import 'package:flutter/material.dart';
 
 /// Símbolo de aterramento existente.
@@ -12,10 +13,13 @@ class AterramentoExistenteSymbol extends ElectricShape {
     super.size = 180,
     super.color = const Color(0xFF2F3437),
     super.strokeWidth = 1,
+    super.latLong = const LatLong(5454, 45645),
+    super.text = 'N1-5454-1545-7-215--6',
+    super.fontSize = 16,
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildShape(BuildContext context) {
     return CustomPaint(
       size: Size(size * 2.1, size),
       painter: _AterramentoExistentePainter(

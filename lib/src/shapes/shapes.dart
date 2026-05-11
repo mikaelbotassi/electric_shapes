@@ -20,4 +20,4 @@ export './redes/rede_baixa_tensao.dart';
 export './redes/rede_media_tensao.dart'; 
 export './transformadores/transformador_existente_symbol.dart'; 
 export './transformadores/transformador_projetado_symbol.dart'; 
-export 'electric_shape.dart'; 
+export 'electric_shape/electric_shape.dart';
