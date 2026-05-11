@@ -1,3 +1,12 @@
+## 1.0.4
+
+Refactor: Expand `ElectricShape.copyWith` with metadata properties
+
+- Update the `ElectricShape` base class signature for `copyWith` to include `text`, `fontSize`, and `latLong` parameters.
+- Implement the updated `copyWith` method across all concrete symbol subclasses, including transformers, poles, switches, grounding, surge arresters, and network types.
+- Ensure new metadata properties are correctly persisted when creating copies of symbol instances.
+- Add necessary imports for `latlong_desc_widget.dart` across the symbol library to support geographical coordinate types.
+
 ## 1.0.3
 
 Docs: Add documentation for electric shape and coordinate widgets

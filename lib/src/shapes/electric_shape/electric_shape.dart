@@ -69,7 +69,7 @@ abstract class ElectricShape extends StatelessWidget {
         buildShape(context),
         if(latLong != null)
           LatlongDescWidget(size: fontSize*0.8, latLong: latLong!, color: color),
-        if(text != null)
+        if(text != null && text!.isNotEmpty)
           Text(
             text!,
             style: textTheme.bodyMedium?.copyWith(
