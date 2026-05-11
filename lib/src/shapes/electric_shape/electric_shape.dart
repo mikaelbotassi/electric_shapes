@@ -30,10 +30,13 @@ abstract class ElectricShape extends StatelessWidget {
   /// Espessura do traço usada pelo `CustomPainter`.
   final double strokeWidth;
 
+  /// Texto opcional exibido abaixo do simbolo.
   final String? text;
 
+  /// Tamanho da fonte aplicado ao texto e a descricao de coordenadas.
   final double fontSize;
 
+  /// Coordenadas opcionais mostradas abaixo do simbolo.
   final LatLong? latLong;
 
   /// Retorna uma nova instância do símbolo com propriedades sobrescritas.
@@ -43,6 +46,10 @@ abstract class ElectricShape extends StatelessWidget {
     double? strokeWidth
   });
 
+  /// Constroi apenas a representacao visual principal do simbolo.
+  ///
+  /// Elementos auxiliares, como [text] e [latLong], sao adicionados pela
+  /// implementacao base de [build].
   @protected
   Widget buildShape(BuildContext context);
 

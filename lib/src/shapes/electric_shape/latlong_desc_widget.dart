@@ -1,16 +1,30 @@
 import 'package:flutter/material.dart';
 
+/// Representa um par de coordenadas geograficas.
+///
+/// O pacote usa essa estrutura para associar latitude e longitude a um
+/// simbolo eletrico.
 class LatLong{
 
+  /// Latitude em graus decimais.
   final double latitude;
+
+  /// Longitude em graus decimais.
   final double longitude;
 
+  /// Cria um par de coordenadas geograficas.
   const LatLong(this.latitude, this.longitude);
 
 }
 
+/// Exibe uma etiqueta visual com as coordenadas de um simbolo.
+///
+/// Esse widget mostra um icone de localizacao e o texto formatado de
+/// [latLong], usando variacoes da [color] informada para harmonizar com o
+/// simbolo principal.
 class LatlongDescWidget extends StatelessWidget {
 
+  /// Cria o widget de descricao de latitude e longitude.
   const LatlongDescWidget({
     super.key,
     required this.size,
@@ -18,8 +32,13 @@ class LatlongDescWidget extends StatelessWidget {
     required this.color
   });
 
+  /// Tamanho usado no icone e no texto da descricao.
   final double size;
+
+  /// Coordenadas exibidas abaixo do simbolo.
   final LatLong latLong;
+
+  /// Cor base usada para compor fundo, borda e conteudo.
   final Color color;
 
   @override
