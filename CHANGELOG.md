@@ -1,3 +1,9 @@
+## 1.0.10
+
+Refactor: Adjust Column constraints in `ElectricShape`
+
+- Remove `mainAxisSize: .min` from the `Column` widget to allow it to use default layout behavior.
+
 ## 1.0.9
 
 Refactor: Simplify `ElectricShape` layout by removing automatic scaling logic
