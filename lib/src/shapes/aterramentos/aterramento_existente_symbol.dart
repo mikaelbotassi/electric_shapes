@@ -13,8 +13,8 @@ class AterramentoExistenteSymbol extends ElectricShape {
     super.size = 180,
     super.color = const Color(0xFF2F3437),
     super.strokeWidth = 1,
-    super.latLong = const LatLong(-19.5379307, -40.6347475),
-    super.text = 'N1-5454-1545-7-215--6',
+    super.latLong,
+    super.text,
     super.fontSize = 16,
   });
 

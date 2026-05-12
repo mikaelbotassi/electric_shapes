@@ -212,25 +212,20 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
     ];
   }
 
-  ShapeBuilder _buildShape(
-      ElectricShape Function({
-      Key? key,
-      double size,
-      Color color,
-      double strokeWidth,
-      })
-      factory,
-      ) {
-    return ({
-      required double size,
-      required Color color,
-      required double strokeWidth,
-    }) {
-      return factory(
-        size: size,
-        color: color,
-        strokeWidth: strokeWidth,
-      );
-    };
+  ShapeBuilder _buildShape(ElectricShape Function({
+    Key? key, double size, Color color, double strokeWidth}) factory) {
+      return ({
+        required double size,
+        required Color color,
+        required double strokeWidth,
+      }) {
+        var item = factory(
+          size: size,
+          color: color,
+          strokeWidth: strokeWidth,
+        );
+        item = item.copyWith(latLong: LatLong(-19.5379307, -40.6347475));
+        return item;
+      };
   }
 }
