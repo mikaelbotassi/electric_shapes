@@ -1,3 +1,16 @@
+## 1.0.6
+
+Refactor: Improve `copyWith` flexibility and clean up symbol internals
+
+- Update `copyWith` methods across all symbol classes to support explicitly setting `latLong` to `null` using a sentinel object pattern.
+- Refine `ElectricShape` and `LatlongDescWidget` layouts using `MainAxisSize.min` and `Flexible` text to prevent layout overflows and truncate coordinate labels safely.
+- Adjust font scaling for coordinate labels within the `ElectricShape` base class.
+- Add a `LatLong.empty()` factory constructor to the `LatLong` model.
+- Update the minimum Dart SDK requirement to `3.10.0` in `pubspec.yaml`.
+- Remove hardcoded default values for `latLong` and `text` from `AterramentoExistenteSymbol`.
+- Update the example app to inject sample `LatLong` coordinates into `AterramentoExistenteSymbol` via `copyWith`.
+- Remove redundant internal imports from switch symbol widgets and rely on the package's public export barrel instead.
+
 ## 1.0.5
 
 Refactor: Extract `LatLong` class to a dedicated models file
