@@ -13,7 +13,7 @@ class AterramentoExistenteSymbol extends ElectricShape {
     super.size = 180,
     super.color = const Color(0xFF2F3437),
     super.strokeWidth = 1,
-    super.latLong = const LatLong(5454, 45645),
+    super.latLong = const LatLong(-19.5379307, -40.6347475),
     super.text = 'N1-5454-1545-7-215--6',
     super.fontSize = 16,
   });
@@ -37,13 +37,14 @@ class AterramentoExistenteSymbol extends ElectricShape {
     double? strokeWidth,
     String? text,
     double? fontSize,
-    LatLong? latLong
+    Object? latLong = const Object()
   }) {
     return AterramentoExistenteSymbol(
       color: color ?? this.color,
       strokeWidth: strokeWidth ?? this.strokeWidth,
       size: size ?? this.size,
-      latLong: latLong ?? this.latLong,
+      latLong: identical(latLong, const Object())
+          ? this.latLong : latLong as LatLong?,
       text: text ?? this.text,
       fontSize: fontSize ?? this.fontSize,
     );

@@ -13,4 +13,6 @@ class LatLong{
   /// Cria um par de coordenadas geograficas.
   const LatLong(this.latitude, this.longitude);
 
+  factory LatLong.empty() => LatLong(0, 0);
+
 }

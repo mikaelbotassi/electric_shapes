@@ -44,6 +44,7 @@ class LatlongDescWidget extends StatelessWidget {
         border: Border.all(color: darkColor)
       ),
       child: Row(
+        mainAxisSize: .min,
         spacing: 8,
         children: [
           Icon(
@@ -51,12 +52,15 @@ class LatlongDescWidget extends StatelessWidget {
             size: size,
             color: darkColor,
           ),
-          Text(
-            '${latLong.latitude}, ${latLong.longitude}',
-            style: textTheme.bodyMedium?.copyWith(
-              fontSize: size,
-              fontWeight: FontWeight.bold,
-              color: darkColor
+          Flexible(
+            child: Text(
+              '${latLong.latitude}, ${latLong.longitude}',
+              maxLines: 1,
+              style: textTheme.bodyMedium?.copyWith(
+                fontSize: size,
+                fontWeight: FontWeight.bold,
+                color: darkColor
+              ),
             ),
           )
         ],

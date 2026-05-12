@@ -37,13 +37,15 @@ class PosteConcretoCircularProjetadoSymbol extends ElectricShape {
     double? strokeWidth,
     String? text,
     double? fontSize,
-    LatLong? latLong
+    Object? latLong = const Object()
   }) {
     return PosteConcretoCircularProjetadoSymbol(
       color: color ?? this.color,
       strokeWidth: strokeWidth ?? this.strokeWidth,
       size: size ?? this.size,
-      latLong: latLong ?? this.latLong,
+      latLong: identical(latLong, const Object())
+          ? this.latLong
+          : latLong as LatLong?,
       text: text ?? this.text,
       fontSize: fontSize ?? this.fontSize,
     );

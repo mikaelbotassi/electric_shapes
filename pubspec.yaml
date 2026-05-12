@@ -6,7 +6,7 @@ repository: https://github.com/mikaelbotassi/electric_shapes
 issue_tracker: https://github.com/mikaelbotassi/electric_shapes/issues
 
 environment:
-  sdk: ^3.5.0
+  sdk: ^3.10.0
   flutter: ">=3.24.0"
 
 dependencies:

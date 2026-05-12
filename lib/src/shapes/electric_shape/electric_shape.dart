@@ -47,7 +47,7 @@ abstract class ElectricShape extends StatelessWidget {
     double? strokeWidth,
     String? text,
     double? fontSize,
-    LatLong? latLong
+    Object? latLong = const Object(),
   });
 
   /// Constroi apenas a representacao visual principal do simbolo.
@@ -65,11 +65,12 @@ abstract class ElectricShape extends StatelessWidget {
       color
     );
     return Column(
+      mainAxisSize: .min,
       spacing: 8,
       children: [
         buildShape(context),
         if(latLong != null)
-          LatlongDescWidget(size: fontSize*0.8, latLong: latLong!, color: color),
+          LatlongDescWidget(size: fontSize*0.6, latLong: latLong!, color: color),
         if(text != null && text!.isNotEmpty)
           Text(
             text!,
