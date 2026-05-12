@@ -68,7 +68,7 @@ abstract class ElectricShape extends StatelessWidget {
       mainAxisSize: .min,
       spacing: 8,
       children: [
-        buildShape(context),
+        Expanded(child: buildShape(context)),
         if(latLong != null)
           LatlongDescWidget(size: fontSize*0.6, latLong: latLong!, color: color),
         if(text != null && text!.isNotEmpty)
