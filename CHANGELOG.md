@@ -1,9 +1,3 @@
-## 1.0.7
-
-Fix: Wrap shape widget with Expanded in ElectricShape layout
-
-- Wrap the `buildShape(context)` call with an `Expanded` widget to ensure the shape correctly occupies available space within its layout container.
-
 ## 1.0.6
 
 Refactor: Improve `copyWith` flexibility and clean up symbol internals
