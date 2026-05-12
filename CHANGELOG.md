@@ -1,3 +1,11 @@
+## 1.0.8
+
+Refactor: Enhance `ElectricShape` scaling and layout constraints
+
+- Replace the `Expanded` widget with a `LayoutBuilder` to better handle both bounded and unbounded width constraints.
+- Implement dynamic scaling using `FittedBox` with `BoxFit.fitWidth` to ensure shapes properly fit within available horizontal space.
+- Extract the shape building logic into a local variable to optimize the layout structure.
+
 ## 1.0.6
 
 Refactor: Improve `copyWith` flexibility and clean up symbol internals
