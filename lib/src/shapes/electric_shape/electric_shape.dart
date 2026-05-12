@@ -64,28 +64,12 @@ abstract class ElectricShape extends StatelessWidget {
       Colors.black.withValues(alpha: 0.8),
       color
     );
-    final shape = buildShape(context);
 
     return Column(
       mainAxisSize: .min,
       spacing: 8,
       children: [
-        LayoutBuilder(
-          builder: (context, constraints) {
-            if (!constraints.hasBoundedWidth) {
-              return shape;
-            }
-
-            return SizedBox(
-              width: constraints.maxWidth,
-              child: FittedBox(
-                fit: BoxFit.fitWidth,
-                alignment: Alignment.center,
-                child: shape,
-              ),
-            );
-          },
-        ),
+        buildShape(context),
         if(latLong != null)
           LatlongDescWidget(size: fontSize*0.6, latLong: latLong!, color: color),
         if(text != null && text!.isNotEmpty)
