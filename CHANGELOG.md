@@ -1,3 +1,11 @@
+## 1.0.9
+
+Refactor: Simplify `ElectricShape` layout by removing automatic scaling logic
+
+- Remove the `LayoutBuilder` and `FittedBox` wrappers from the `ElectricShape` build method.
+- Render the `buildShape(context)` widget directly within the main `Column`.
+- Eliminate conditional logic that previously handled width constraints and fitted the shape to the available horizontal space.
+
 ## 1.0.8
 
 Refactor: Enhance `ElectricShape` scaling and layout constraints
