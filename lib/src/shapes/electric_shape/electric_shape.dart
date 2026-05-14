@@ -76,7 +76,7 @@ abstract class ElectricShape extends StatelessWidget {
             text!,
             style: textTheme.bodyMedium?.copyWith(
               fontSize: fontSize,
-              color: darkColor
+              color: color
             ),
           )
       ],
