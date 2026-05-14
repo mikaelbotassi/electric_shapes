@@ -60,10 +60,6 @@ abstract class ElectricShape extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final darkColor = Color.alphaBlend(
-      Colors.black.withValues(alpha: 0.8),
-      color
-    );
 
     return Column(
       spacing: 8,

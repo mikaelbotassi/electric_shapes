@@ -1,3 +1,8 @@
+## 1.0.11
+Refactor: Update text color property in `ElectricShape`
+
+- Update the `ElectricShape` widget to use the primary `color` parameter for text styling instead of `darkColor`.
+
 ## 1.0.10
 
 Refactor: Adjust Column constraints in `ElectricShape`
