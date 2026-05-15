@@ -36,7 +36,6 @@ class SymbolsTab extends StatelessWidget {
                 runSpacing: 12,
                 children: section.items.map((item) {
                   return ExampleCard(
-                    label: item.label,
                     child: item.builder(
                       size: size,
                       color: color,

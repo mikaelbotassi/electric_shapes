@@ -18,11 +18,9 @@ class ShapeSection {
 
 class ShapeSpec {
   const ShapeSpec({
-    required this.label,
     required this.builder,
   });
 
-  final String label;
   final ShapeBuilder builder;
 }
 

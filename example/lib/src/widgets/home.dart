@@ -99,12 +99,10 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Transformadores',
         items: [
           ShapeSpec(
-            label: 'Existente',
-            builder: _buildShape(TransformadorExistenteSymbol.new),
+            builder: _buildShape('Existente',TransformadorExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Projetado',
-            builder: _buildShape(TransformadorProjetadoSymbol.new),
+            builder: _buildShape('Projetado',TransformadorProjetadoSymbol.new),
           ),
         ],
       ),
@@ -112,32 +110,25 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Postes',
         items: [
           ShapeSpec(
-            label: 'Concreto DT existente',
-            builder: _buildShape(PosteConcretoDtExistenteSymbol.new),
+            builder: _buildShape('Concreto DT existente',PosteConcretoDtExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Concreto DT projetado',
-            builder: _buildShape(PosteConcretoDtProjetadoSymbol.new),
+            builder: _buildShape('Concreto DT projetado',PosteConcretoDtProjetadoSymbol.new),
           ),
           ShapeSpec(
-            label: 'Concreto circular existente',
-            builder: _buildShape(PosteConcretoCircularExistenteSymbol.new),
+            builder: _buildShape('Concreto circular existente',PosteConcretoCircularExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Concreto circular projetado',
-            builder: _buildShape(PosteConcretoCircularProjetadoSymbol.new),
+            builder: _buildShape('Concreto circular projetado',PosteConcretoCircularProjetadoSymbol.new),
           ),
           ShapeSpec(
-            label: 'Fibra de vidro existente',
-            builder: _buildShape(PosteFibraVidroExistenteSymbol.new),
+            builder: _buildShape('Fibra de vidro existente',PosteFibraVidroExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Fibra de vidro projetado',
-            builder: _buildShape(PosteFibraVidroProjetadoSymbol.new),
+            builder: _buildShape('Fibra de vidro projetado',PosteFibraVidroProjetadoSymbol.new),
           ),
           ShapeSpec(
-            label: 'Madeira existente',
-            builder: _buildShape(PosteMadeiraExistenteSymbol.new),
+            builder: _buildShape('Madeira existente',PosteMadeiraExistenteSymbol.new),
           ),
         ],
       ),
@@ -145,12 +136,10 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Aterramentos',
         items: [
           ShapeSpec(
-            label: 'Existente',
-            builder: _buildShape(AterramentoExistenteSymbol.new),
+            builder: _buildShape('Existente',AterramentoExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Projetado',
-            builder: _buildShape(AterramentoProjetadoSymbol.new),
+            builder: _buildShape('Projetado',AterramentoProjetadoSymbol.new),
           ),
         ],
       ),
@@ -158,12 +147,10 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Para-raios',
         items: [
           ShapeSpec(
-            label: 'Existente',
-            builder: _buildShape(ParaRaiosExistenteSymbol.new),
+            builder: _buildShape('Existente',ParaRaiosExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Projetado',
-            builder: _buildShape(ParaRaiosProjetadoSymbol.new),
+            builder: _buildShape('Projetado',ParaRaiosProjetadoSymbol.new),
           ),
         ],
       ),
@@ -171,28 +158,22 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Chaves',
         items: [
           ShapeSpec(
-            label: 'Faca existente',
-            builder: _buildShape(ChaveFacaExistenteSymbol.new),
+            builder: _buildShape('Faca existente',ChaveFacaExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Faca projetada',
-            builder: _buildShape(ChaveFacaProjetadaSymbol.new),
+            builder: _buildShape('Faca projetada',ChaveFacaProjetadaSymbol.new),
           ),
           ShapeSpec(
-            label: 'Fusível existente',
-            builder: _buildShape(ChaveFusivelExistenteSymbol.new),
+            builder: _buildShape('Fusível existente',ChaveFusivelExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Fusível projetada',
-            builder: _buildShape(ChaveFusivelProjetadaSymbol.new),
+            builder: _buildShape('Fusível projetada',ChaveFusivelProjetadaSymbol.new),
           ),
           ShapeSpec(
-            label: 'Religadora existente',
-            builder: _buildShape(ChaveReligadoraExistenteSymbol.new),
+            builder: _buildShape('Religadora existente',ChaveReligadoraExistenteSymbol.new),
           ),
           ShapeSpec(
-            label: 'Religadora projetada',
-            builder: _buildShape(ChaveReligadoraProjetadaSymbol.new),
+            builder: _buildShape('Religadora projetada',ChaveReligadoraProjetadaSymbol.new),
           ),
         ],
       ),
@@ -200,19 +181,17 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: 'Redes',
         items: [
           ShapeSpec(
-            label: 'Baixa tensão',
-            builder: _buildShape(RedeBaixaTensaoSymbol.new),
+            builder: _buildShape('Baixa tensão',RedeBaixaTensaoSymbol.new),
           ),
           ShapeSpec(
-            label: 'Média tensão',
-            builder: _buildShape(RedeMediaTensaoSymbol.new),
+            builder: _buildShape('Média tensão',RedeMediaTensaoSymbol.new),
           ),
         ],
       ),
     ];
   }
 
-  ShapeBuilder _buildShape(ElectricShape Function({
+  ShapeBuilder _buildShape(String label, ElectricShape Function({
     Key? key, double size, Color color, double strokeWidth}) factory) {
       return ({
         required double size,
@@ -224,7 +203,10 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
           color: color,
           strokeWidth: strokeWidth,
         );
-        item = item.copyWith(latLong: LatLong(-19.5379307, -40.6347475));
+        item = item.copyWith(
+          latLong: LatLong(-19.5379307, -40.6347475),
+          text: label
+        );
         return item;
       };
   }

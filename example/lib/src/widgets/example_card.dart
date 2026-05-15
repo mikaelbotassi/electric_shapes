@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class ExampleCard extends StatelessWidget {
   const ExampleCard({
     super.key,
-    required this.label,
+    this.label,
     required this.child,
   });
 
-  final String label;
+  final String? label;
   final Widget child;
 
   @override
@@ -43,13 +43,14 @@ class ExampleCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                Text(
-                  label,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
+                if(label != null)
+                  Text(
+                    label!,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
               ],
             );
           }
@@ -68,13 +69,14 @@ class ExampleCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10),
-              Text(
-                label,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              if(label != null)
+                Text(
+                  label!,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
             ],
           );
         },
