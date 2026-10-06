@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <!-- Segmento da seta inferior esquerda -->
+  <line x1="22" y1="78" x2="31" y2="69" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+  
+  <!-- Segmento da seta superior direita com ponteira -->
+  <line x1="69" y1="31" x2="80" y2="20" stroke="currentColor" stroke-width="4.5" stroke-linecap="butt"/>
+  <polygon points="76 13, 89 11, 87 24" fill="currentColor"/>
+
+  <defs>
+    <!-- Metade esquerda -->
+    <clipPath id="clip-left">
+      <rect x="0" y="0" width="50" height="100"/>
+    </clipPath>
+    <!-- Metade direita -->
+    <clipPath id="clip-right">
+      <rect x="50" y="0" width="50" height="100"/>
+    </clipPath>
+    
+    <!-- Máscara para vazar o R na metade direita -->
+    <mask id="mask-right">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <text x="50" y="61" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="black" clip-path="url(#clip-right)">R</text>
+    </mask>
+  </defs>
+
+  <!-- Metade direita preenchida vazando o R -->
+  <path d="M 50 23 A 27 27 0 0 1 50 77 Z" fill="currentColor" mask="url(#mask-right)"/>
+
+  <!-- Contorno do círculo -->
+  <circle cx="50" cy="50" r="27" stroke="currentColor" stroke-width="4.5"/>
+
+  <!-- Letra R na metade esquerda -->
+  <text x="50" y="61" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="currentColor" clip-path="url(#clip-left)">R</text>
+</svg>

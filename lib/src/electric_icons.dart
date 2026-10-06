@@ -172,6 +172,66 @@ class ElectricIcons {
     fontPackage: _fontPackage,
   );
 
+  static const IconData capacitora = IconData(
+    0xF018,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData capacitoraDesativada = IconData(
+    0xF017,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData reguladoraExistente = IconData(
+    0xF01B,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData reguladoraProjetada = IconData(
+    0xF01A,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData reguladoraDesativada = IconData(
+    0xF019,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData religadorExistente = IconData(
+    0xF01E,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData religadorProjetado = IconData(
+    0xF01D,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData religadorDesativado = IconData(
+    0xF01C,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData subestacaoDistribuidora = IconData(
+    0xF020,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
+  static const IconData subestacaoRebaixadora = IconData(
+    0xF01F,
+    fontFamily: _fontFamily,
+    fontPackage: _fontPackage,
+  );
+
   /// Lista com todos os ícones disponibilizados pelo pacote.
   static const values = <IconData>[
     ElectricIcons.transformadorExistente,
@@ -197,6 +257,16 @@ class ElectricIcons {
     ElectricIcons.redeMediaTensaoProjetada,
     ElectricIcons.redeBaixaTensaoExistente,
     ElectricIcons.redeBaixaTensaoProjetada,
+    ElectricIcons.capacitora,
+    ElectricIcons.capacitoraDesativada,
+    ElectricIcons.reguladoraExistente,
+    ElectricIcons.reguladoraProjetada,
+    ElectricIcons.reguladoraDesativada,
+    ElectricIcons.religadorExistente,
+    ElectricIcons.religadorProjetado,
+    ElectricIcons.religadorDesativado,
+    ElectricIcons.subestacaoDistribuidora,
+    ElectricIcons.subestacaoRebaixadora
   ];
 
 }
