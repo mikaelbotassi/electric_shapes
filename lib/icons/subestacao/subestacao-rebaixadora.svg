@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="100%" height="100%" fill="none">
-  <!-- Terminal condutor esquerdo (termina exatamente na borda do círculo x=44) -->
-  <line x1="16" y1="40" x2="44" y2="40" stroke="currentColor" stroke-width="6" stroke-linecap="butt"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Terminal condutor esquerdo -->
+  <line x1="5" y1="50" x2="31" y2="50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
   
   <!-- Círculos entrelaçados -->
-  <circle cx="66" cy="40" r="22" stroke="currentColor" stroke-width="6"/>
-  <circle cx="94" cy="40" r="22" stroke="currentColor" stroke-width="6"/>
+  <circle cx="43" cy="50" r="23" stroke="currentColor" stroke-width="6"/>
+  <circle cx="67" cy="50" r="23" stroke="currentColor" stroke-width="6"/>
   
-  <!-- Terminal condutor direito (inicia exatamente na borda do círculo x=116) -->
-  <line x1="116" y1="40" x2="144" y2="40" stroke="currentColor" stroke-width="6" stroke-linecap="butt"/>
+  <!-- Terminal condutor direito -->
+  <line x1="79" y1="50" x2="95" y2="50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
 </svg>

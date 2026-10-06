@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <!-- Terminal de entrada esquerdo -->
-  <line x1="10" y1="40" x2="35" y2="40" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="5" y1="50" x2="28" y2="50" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
 
   <!-- Quadrado central -->
-  <rect x="35" y="25" width="30" height="30" stroke="currentColor" stroke-width="3.5" stroke-linejoin="miter"/>
+  <rect x="28" y="28" width="44" height="44" stroke="currentColor" stroke-width="5.5" stroke-linejoin="miter"/>
 
   <!-- Terminal de saída direito -->
-  <line x1="65" y1="40" x2="82" y2="40" stroke="currentColor" stroke-width="3.5" stroke-linecap="butt"/>
+  <line x1="72" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="5.5" stroke-linecap="butt"/>
 
   <!-- Seta indicadora à direita -->
-  <polygon points="80 33, 93 40, 80 47" fill="currentColor"/>
+  <polygon points="82 40, 97 50, 82 60" fill="currentColor"/>
 
-  <!-- Marcação em 'X' de desativação (ultrapassando os vértices do quadrado) -->
-  <line x1="28" y1="12" x2="72" y2="68" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <line x1="28" y1="68" x2="72" y2="12" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Marcação em 'X' de desativação -->
+  <line x1="18" y1="18" x2="82" y2="82" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+  <line x1="18" y1="82" x2="82" y2="18" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
 </svg>
