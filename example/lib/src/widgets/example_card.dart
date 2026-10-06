@@ -4,10 +4,12 @@ class ExampleCard extends StatelessWidget {
   const ExampleCard({
     super.key,
     this.label,
+    this.subtitle,
     required this.child,
   });
 
   final String? label;
+  final String? subtitle;
   final Widget child;
 
   @override
@@ -43,7 +45,7 @@ class ExampleCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                if(label != null)
+                if (label != null)
                   Text(
                     label!,
                     maxLines: 2,
@@ -51,6 +53,20 @@ class ExampleCard extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
+                if (subtitle != null) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle!,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Colors.grey[600],
+                          fontFamily: 'monospace',
+                          fontSize: 11,
+                        ),
+                  ),
+                ],
               ],
             );
           }
