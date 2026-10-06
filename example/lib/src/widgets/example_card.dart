@@ -31,16 +31,19 @@ class ExampleCard extends StatelessWidget {
       ),
       child: LayoutBuilder(
         builder: (context, constraints) {
+          final maxInnerWidth = constraints.maxWidth;
           final hasBoundedHeight = constraints.hasBoundedHeight;
 
           if (hasBoundedHeight) {
             return Column(
               children: [
                 Expanded(
-                  child: Center(
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: child,
+                  child: ClipRect(
+                    child: Center(
+                      child: FittedBox(
+                        fit: BoxFit.contain,
+                        child: child,
+                      ),
                     ),
                   ),
                 ),
@@ -77,15 +80,18 @@ class ExampleCard extends StatelessWidget {
             children: [
               SizedBox(
                 height: 96,
-                child: Center(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: child,
+                width: maxInnerWidth,
+                child: ClipRect(
+                  child: Center(
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: child,
+                    ),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
-              if(label != null)
+              if (label != null)
                 Text(
                   label!,
                   maxLines: 2,
@@ -93,6 +99,20 @@ class ExampleCard extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
+              if (subtitle != null) ...[
+                const SizedBox(height: 2),
+                Text(
+                  subtitle!,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: Colors.grey[600],
+                        fontFamily: 'monospace',
+                        fontSize: 11,
+                      ),
+                ),
+              ],
             ],
           );
         },
