@@ -1,3 +1,10 @@
+## 1.1.0
+- Add SVG icon assets for capacitors, regulators, reclosers, and substations.
+- Define new `IconData` constants for the added icons in `ElectricIcons` and append them to the `values` list.
+- Update `ElectricIcons` font files (`.otf`, `.ttf`, `.woff`) to include the new icon glyphs.
+
+- Update the `ElectricShape` widget to use the primary `color` parameter for text styling instead of `darkColor`.
+
 ## 1.0.11
 Refactor: Update text color property in `ElectricShape`
 
