@@ -2,12 +2,11 @@
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"
-    d="M50 4a46 46 0 1 0 0 92a46 46 0 1 0 0-92Zm0 4a42 42 0 1 1 0 84a42 42 0 1 1 0-84Z"
+    d="M 50,4 A 46,46 0 1 0 50,96 A 46,46 0 1 0 50,4 Z M 50,12 A 38,38 0 1 1 50,88 A 38,38 0 1 1 50,12 Z"
   />
-
-  <rect x="22" y="32" width="4" height="36" rx="2" />
-  <rect x="42" y="6" width="4" height="88" rx="2" />
-  <rect x="60" y="32" width="4" height="36" rx="2" />
-  <rect x="78" y="6" width="4" height="88" rx="2" />
-  <rect x="78" y="48" width="150" height="4" rx="2" />
+  <rect x="20" y="32" width="8" height="36" rx="4" />
+  <rect x="40" y="6" width="8" height="88" rx="4" />
+  <rect x="58" y="32" width="8" height="36" rx="4" />
+  <rect x="76" y="6" width="8" height="88" rx="4" />
+  <rect x="76" y="46" width="152" height="8" rx="4" />
 </svg>
