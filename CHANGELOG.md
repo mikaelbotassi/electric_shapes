@@ -1,3 +1,11 @@
+## 1.1.1
+
+- Adjust `viewBox` dimensions in multiple SVG icons to normalize bounding boxes.
+- Regenerate `ElectricIcons` font files (`.otf`, `.ttf`, `.woff`) to reflect the updated SVGs.
+- Reorder icon constants and update unicode codepoints alphabetically in `electric_icons.dart`.
+- Sort the `_electricIcons` list alphabetically in the example application's `home.dart`.
+- Update `widthFactor` for `ChaveFusivel` symbols and remove the `usesCustomPaint` parameter in `electric_shapes_test.dart`.
+
 ## 1.1.0
 - Add SVG icon assets for capacitors, regulators, reclosers, and substations.
 - Define new `IconData` constants for the added icons in `ElectricIcons` and append them to the `values` list.
