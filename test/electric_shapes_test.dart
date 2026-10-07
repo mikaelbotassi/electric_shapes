@@ -229,7 +229,6 @@ void main() {
       ),
       widthFactor: 2.5,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'ChaveFacaProjetadaSymbol',
@@ -244,7 +243,6 @@ void main() {
       ),
       widthFactor: 2.5,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'ChaveFusivelExistenteSymbol',
@@ -257,9 +255,8 @@ void main() {
         color: color,
         strokeWidth: strokeWidth,
       ),
-      widthFactor: 2.6,
+      widthFactor: 559 / 280,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'ChaveFusivelProjetadaSymbol',
@@ -272,9 +269,8 @@ void main() {
         color: color,
         strokeWidth: strokeWidth,
       ),
-      widthFactor: 2.6,
+      widthFactor: 559 / 280,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'ChaveReligadoraExistenteSymbol',
@@ -289,7 +285,6 @@ void main() {
       ),
       widthFactor: 2.2,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'ChaveReligadoraProjetadaSymbol',
@@ -304,7 +299,6 @@ void main() {
       ),
       widthFactor: 2.4,
       heightFactor: 1,
-      usesCustomPaint: false,
     ),
     _ShapeCase(
       name: 'RedeBaixaTensaoSymbol',
